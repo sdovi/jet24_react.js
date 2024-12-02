@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+ 
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Neue Haas Unica';
+  src: url('./assets/Fonts/NeueHaasUnica-Regular.woff2') format('woff2'),
+       url('./assets/Fonts/NeueHaasUnica-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Neue Haas Unica', sans-serif;
+  background-color: rgb(9,29,39);
+}
+
+
+/* Ensure the app container takes the full height of the viewport */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Content area takes up all available space, pushing the footer down */
+.content {
+  flex: 1;
+}
+
+/* Footer styling */
+.footer {
+  margin-bottom: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+
+.container{
+  margin: auto;
+  width: 90%;
+}
+
+/* 
+.body{
+
+  max-width: 1440px;
+  width: 100%;
+  overflow: hidden;
+}
+ */
+
+
+
+
+
+.container2{
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  
+  margin: auto;
+}
+.container2 p{
+  font-family: Neue Haas Unica;
+font-size: 70px;
+font-weight: 400;
+line-height: 70px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+  text-align: center;
+  color: white;
+}
+
+
+
+
+
+/* Убираем стандартные стили для <Link> */
+.link {
+  text-decoration: none; /* Убираем подчеркивание */
+  color: inherit; /* Наследуем цвет родителя */
+  font-weight: normal; /* Отключаем жирное начертание */
+}
+
+.Link{
+  text-decoration: none;
+}
+
+
+
+
+

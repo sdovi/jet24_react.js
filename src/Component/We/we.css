@@ -1,0 +1,139 @@
+.we__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 78vh;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.we__year-container {
+  display: flex;
+  align-items: center;
+  font-size: 4rem; /* Увеличен размер текста */
+  margin-bottom: 20px;
+}
+
+.we__start-text {
+  margin-right: 1 px;
+}
+
+.we__scroll-wrapper {
+  position: relative;
+  width: 4rem; /* Ширина контейнера с учетом увеличенного текста */
+  height: 5rem; /* Высота одного числа с учетом увеличенного текста */
+  overflow: hidden;
+}
+
+.we__scroll-content {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease-out; /* Ускоренная анимация */
+  animation: fadeIn 0.5s ease-out; /* Ускорена текстовая анимация */
+}
+
+.we__scroll-item {
+  height: 5rem; /* Соответствует новой высоте */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem; /* Увеличен размер текста внутри элемента */
+}
+
+.we__text-container {
+  font-size: 2.5rem; /* Можно увеличить текст внутри этого контейнера, если нужно */
+  text-align: center;
+}
+
+.we__animated-text {
+  opacity: 1;
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.we__scroll-wrapper {
+  position: relative;
+  width: 5rem; /* Увеличьте ширину, если текст выходит за границы */
+  height: 4rem; /* Высота одного числа, равная font-size */
+  overflow: hidden;
+}
+
+.we__scroll-content {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease-out; /* Убедитесь, что анимация плавная */
+}
+
+.we__scroll-item {
+  height: 4rem; /* Должно совпадать с font-size */
+  line-height: 4rem; /* Совпадает с font-size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem; /* Убедитесь, что текст помещается */
+  white-space: nowrap; /* Предотвращает перенос текста */
+}
+
+.we__text-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.we__text {
+  font-size: 1.5rem;
+  color: #333;
+  opacity: 0;
+  animation: fadeIn 0.8s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.we__text-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.we__text {
+  font-size: 1.5rem;
+  color: #ffffff;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.we__text.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
